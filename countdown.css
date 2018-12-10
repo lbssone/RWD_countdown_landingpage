@@ -1,0 +1,134 @@
+html, body {  /*logo是在body tag裡面，所以只設定html tag不夠*/ 
+	background:url("../landing page/img/bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+@media screen and (max-width: 800px) {  /*只有768px以下的螢幕會受影響*/
+  
+  #logo img {
+  	width: 50% !important;
+  	height: 50% !important;;
+  }
+
+  #intro p {
+  	font-size: 1.5em !important;
+  }
+
+  #counter .countdown {
+  	font-size: 1.45em !important;
+  	letter-spacing: 1.5px !important;
+  }
+
+  #icons .is {
+  	margin: 5px 3px !important;
+  	font-size: 2em;
+  }
+
+  #signup input {
+  	margin-top: -15px !important;
+  	margin: 0px auto;
+  	width: 90% !important;
+  }
+
+  #signup .btn {
+  	margin-top: 10px;
+  }
+
+}
+
+@media(min-width: 376px) and (max-width: 667px) {
+  #logo img {
+  	width: 30% !important;
+  	height: 30% !important;
+  }
+
+   #intro p {
+  	font-size: 1.5em !important;
+  }
+
+}
+
+#logo img {
+	margin: 0 auto;
+	padding-top: 8px;
+	height: 350px;
+}
+
+#intro p {
+	color: white;
+	text-align: center;
+	margin-top: 0px;
+	font-family: Nanum Pen Script;
+	font-size: 1.8em;
+}
+
+#counter .countdown {
+	color: white;
+	text-align: center;
+	font-family: Amatic SC;
+	font-weight: 700;
+	font-size: 3em;
+	letter-spacing: 3px;
+	margin-top: -15px;
+}
+
+#icons {
+	text-align: center;
+}
+
+#icons .is {
+	color: white;
+	height: 50px;
+	margin: 25px 15px;
+	position: relative;
+  bottom: 0;  /*icons的初始位置*/
+  transition: all 0.2s ease-in-out;  /*從原始狀態到hover等等動作之間的轉換*/
+}
+
+#icons .twitter:hover {
+  color: #6cadde;
+  bottom: 5px;
+}
+
+#icons .facebook:hover {
+  color: #3b5998;
+  bottom: 5px;
+}
+
+#icons .youtube:hover {
+  color: #ea4335;
+  bottom: 5px;
+}
+
+#icons .ins:hover {
+  color: #517fa6;
+  bottom: 5px;
+}
+
+#signup {
+  text-align: center;
+}
+
+#signup .form-inline {
+	display: block;
+}
+
+#signup .btn {
+	background-color: rgba(161, 186, 226, 0.5);
+	color: white;
+}
+
+#signup .btn:hover {
+	background-color: rgba(37, 165, 82, 1);
+}
+
+#signup .form-control:focus {
+	box-shadow: none;
+}
+
+#signup input {
+	width: 300px;
+}

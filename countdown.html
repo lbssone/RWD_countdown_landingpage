@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>MyPage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="countdown.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Inconsolata:400,700|Nanum+Pen+Script" rel="stylesheet">
+  </head>
+  <body>
+
+    <section id="logo">
+      <div class="container">
+        <div class="row">  <!--let us place the items we need into the container along a single row -->
+          <!-- <div class="col-md-12 text-center"> -->
+            <img src="img/my-logo.png" class="img-fluid">
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>We're working hard, we'll be ready to launch in...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="counter">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="countdown"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="icons">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="list-inline">  <!--這個class讓ul裡面的東西可以在同一行 -->
+              <a href="https://www.twitter.com" target="blank"><li class="list-inline-item"><i class="is twitter fab fa-twitter-square fa-3x"></i></li></a>  <!--target=blank可以讓他以新分頁開啟 -->
+
+              <a href="https://www.facebook.com" target="blank"><li class="list-inline-item"><i class="is facebook fab fa-facebook-square fa-3x"></i></li></a>
+
+              <a href="https://www.youtube.com" target="blank"><li class="list-inline-item"><i class="is youtube fab fa-youtube fa-3x"></i></li></a>
+
+              <a href="https://www.instagram.com" target="blank"><li class="list-inline-item"><i class="is ins fab fa-instagram fa-3x"></i></li></a>
+              
+              <!-- <a href="https://www.twitter.com" target="blank"><li class="list-inline-item"><img src="../landing page/img/twitter-logo.png" class="is twitter"></li></a>
+              
+              <a href="https://www.facebook.com" target="blank"><li class="list-inline-item"><img src="../landing page/img/facebook-logo.png" class="is facebook"></li></a>
+              
+              <a href="https://www.youtube.com" target="blank"><li class="list-inline-item"><img src="../landing page/img/youtube-logo.png" class="is youtube"></li></a>
+              
+              <a href="https://www.instagram.com" target="blank"><li class="list-inline-item"><img src="../landing page/img/instagram-logo.png" class="is instagram"></li></a> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="signup">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form class="form-inline" role="form" method="post" action="#signup">
+              <input type="email" class="form-control form-control-sm" name="email" placeholder="please enter your email">
+              <button type="submit" class="btn btn-signup btn-sm" name="submit" value="send">find out more</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/landing page/jquery.countdown.js"></script>
+    <script>
+      $(function() {
+        $('.countdown').countdown({
+            date: "November 24, 2018 00:00:00"
+        });
+      });
+    </script>
+  </body>
+</html>
